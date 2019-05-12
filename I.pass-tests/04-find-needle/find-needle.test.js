@@ -1,17 +1,17 @@
-var findTheNeedle = require("./find-needle");
-
+var findNeedle = require("./find-needle/");
+var findPlant = require("./find-needle/");
 test("Find the needle", function() {
   var words = ["house", "train", "slide", "needle", "book"];
   var expected = 3;
 
-  var output = findTheNeedle(words, "needle");
+  var output = findNeedle(words);
   expect(output).toEqual(expected);
 });
 
 test("Find the plant", function() {
-  var words = ["plant", "shelf", "arrow", "bird"];
-  var expected = 0;
+  var words2 = ["plant", "shelf", "arrow", "bird"];
+  var expected2 = 0;
 
-  var output = findTheNeedle(words, "plant");
-  expect(output).toEqual(expected);
+  var output2 = findPlant(words2);
+  expect(output2).toEqual(expected2);
 });
