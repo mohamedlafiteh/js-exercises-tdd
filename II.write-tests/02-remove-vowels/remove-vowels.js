@@ -1,5 +1,6 @@
 function removeVowels(word) {
-  var characters = word.split("");
+  // word = [ 'w', 'o' , 'r', 'd']
+  var characters = word.split(""); // word.split = ["w", ['o']]
 
   var result = [];
 
@@ -11,9 +12,9 @@ function removeVowels(word) {
       character === "e" ||
       character === "u"
     ) {
-      result.push(character);
+      //result.push(character);
     } else {
-      result.push("_");
+      result.push(character);
     }
   });
 
